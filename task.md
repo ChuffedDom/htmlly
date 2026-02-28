@@ -1,26 +1,26 @@
 - [x] Open file picker and select Markdown file
 - [x] Main loop that will listen to the selected file for changes
     - [x] then it will loop through the filelines looking for the $lide keyword
-    - [ ] start a webserver and open the HTML file with slide and refresh the page on each change
-- [ ] Write the CSS for the styling the page
-- [ ] Create Templates with jinja in python
-    - [ ] create cover
-        - [ ] build html template
+    - [x] start a webserver and open the HTML file with slide and refresh the page on each change
+- [x] Write the CSS for the styling the page
+- [x] Create Templates with jinja in python
+    - [x] create cover
+        - [x] build html template
         - [x] write python function
     - [ ] create about Me
         - [ ] build html template
         - [x] write python function
-    - [ ] create title_list
+    - [x] create title_list
+        - [x] build html template
+        - [x] write python function
+    - [x] create title_text
+        - [x] build html template
+        - [x] write python function
+    - [x] create title_image
         - [ ] build html template
         - [x] write python function
-    - [ ] create title_text
-        - [ ] build html template
-        - [x] write python function
-    - [ ] create title_image
-        - [ ] build html template
-        - [x] write python function
-    - [ ] create singular_paragraph
-        - [ ] build html template
+    - [x] create singular_paragraph
+        - [x] build html template
         - [x] write python function
     - [ ] create to-do
         - [ ] build html template
@@ -53,9 +53,9 @@
     - [x] Watch the markdown file for changes
     - [x] Parse the markdown file to identify slide commands
     - [x] Process slide data and pass it to the correct Python function
-    - [ ] Generate the final HTML file
+    - [x] Generate the final HTML file
 - [ ] User Interface/Experience
-    - [ ] Create the main HTML shell for the presentation
-    - [ ] Create a separate CSS file for slide styling
-    - [ ] Implement responsive design for different aspect ratios
+    - [x] Create the main HTML shell for the presentation
+    - [x] Create a separate CSS file for slide styling
+    - [x] Implement responsive design for different aspect ratios
     - [ ] Implement JavaScript for keyboard navigation (scrolling between slides)

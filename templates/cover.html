@@ -1,1 +1,24 @@
-<div class="slide">{% for arg in args %} {{ arg|safe }} {% endfor %}</div>
+<div class="slide cover-slide">
+  {% for arg in args %} {{ arg|safe }} {% endfor %}
+</div>
+
+<style>
+  .cover-slide {
+    align-items: flex-start;
+    text-align: left;
+    padding: 3vh;
+  }
+  .cover-slide h1 {
+    font-size: 9vh;
+    background-color: var(--accent-coral);
+    color: var(--bg-grey);
+    padding: 0.25em 0.5em;
+    margin: 2vh 0;
+  }
+  .cover-slide h2 {
+    color: var(--accent-gold);
+    font-size: 6vh;
+    font-family: "Inter", sans-serif;
+    margin: 1vh 0;
+  }
+</style>

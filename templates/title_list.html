@@ -1,1 +1,19 @@
-<div class="slide">{% for arg in args %} {{ arg|safe }} {% endfor %}</div>
+<div class="slide title-list-slide">
+  {% for arg in args %} {{ arg|safe }} {% endfor %}
+</div>
+
+<style>
+  .title-list-slide {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .title-list-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+  }
+
+  .title-list-slide li {
+    font-size: 4vh;
+    margin-left: 2em;  
+  }

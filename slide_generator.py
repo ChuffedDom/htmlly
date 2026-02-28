@@ -10,7 +10,7 @@ def render_slide(template_name, args):
     """Helper function to render a slide template."""
     try:
         template = env.get_template(f"{template_name}.html")
-        html_args = [markdown.markdown(arg) for arg in args]
+        html_args = [markdown.markdown(arg, extensions=['extra']) for arg in args]
         return template.render(args=html_args)
     except Exception as e:
         print(f"Error rendering {template_name}: {e}")

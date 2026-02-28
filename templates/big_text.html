@@ -1,1 +1,9 @@
-<div class="slide">{% for arg in args %} {{ arg|safe }} {% endfor %}</div>
+<div class="slide big-text-slide">
+  {% for arg in args %} {{ arg|safe }} {% endfor %}
+</div>
+
+<style>
+  .big-text-slide p {
+    font-size: 8vh;
+  }
+</style>
