@@ -40,7 +40,8 @@ class FileChangeHandler(FileSystemEventHandler):
                 args = slide['args']
                 
                 if hasattr(sg, command):
-                    getattr(sg, command)(args)
+                    html_output = getattr(sg, command)(args)
+                    print(html_output)
                 else:
                     print(f"  🤔 Unknown command: {command}")
 
