@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Prevents scrollbars on the body */
+      }
+      #presentation {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+      }
+      .slide {
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="presentation">{{ content|safe }}</div>
+    <script>
+      let lastModified = null;
+      setInterval(() => {
+        fetch(window.location.href, { method: "HEAD" }).then((response) => {
+          const newLastModified = response.headers.get("Last-Modified");
+          if (lastModified && newLastModified !== lastModified) {
+            window.location.reload();
+          }
+          lastModified = newLastModified;
+        });
+      }, 1000);
+    </script>
+  </body>
+</html>

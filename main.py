@@ -43,15 +43,19 @@ class FileChangeHandler(FileSystemEventHandler):
                         # Stop collecting arguments for the current slide on a blank line
                         current_slide_args = None
             
-            for slide in slides:
-                command = slide['command']
-                args = slide['args']
-                
-                if hasattr(sg, command):
-                    html_output = getattr(sg, command)(args)
-                    print(html_output)
-                else:
-                    print(f"  🤔 Unknown command: {command}")
+            all_slides_html = "".join(
+                getattr(sg, slide['command'])(slide['args'])
+                if hasattr(sg, slide['command'])
+                else f"<p>Unknown command: {slide['command']}</p>"
+                for slide in slides
+            )
+
+            # Render the main template with the slides
+            main_template = sg.env.get_template("main.html")
+            final_html = main_template.render(content=all_slides_html)
+
+            with open(self.html_file, 'w') as f:
+                f.write(final_html)
 
 
 def select_markdown_file():
@@ -98,6 +102,9 @@ if __name__ == "__main__":
 
         # Web server needs to run from the directory of the file
         os.chdir(file_dir)
+        
+        # Allow the server to re-use the address
+        socketserver.TCPServer.allow_reuse_address = True
         Handler = http.server.SimpleHTTPRequestHandler
         httpd = socketserver.TCPServer(("", PORT), Handler)
         
