@@ -6,11 +6,19 @@ import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import slide_generator as sg
+import http.server
+import socketserver
+import threading
+import webbrowser
+
+PORT = 8000
+
 
 
 class FileChangeHandler(FileSystemEventHandler):
-    def __init__(self, watch_file):
+    def __init__(self, watch_file, html_file):
         self.watch_file = os.path.abspath(watch_file)
+        self.html_file = html_file
 
     def on_modified(self, event):
         if not event.is_directory and os.path.abspath(event.src_path) == self.watch_file:
@@ -68,10 +76,41 @@ if __name__ == "__main__":
     markdown_file = select_markdown_file()
 
     if markdown_file:
-        event_handler = FileChangeHandler(markdown_file)
+        base_name, _ = os.path.splitext(markdown_file)
+        html_file = f"{base_name}.html"
+        file_dir = os.path.dirname(markdown_file)
+
+        if not os.path.exists(html_file):
+            print(f"✨ Creating new HTML file: {html_file}")
+            with open(html_file, 'w') as f:
+                # Basic HTML structure
+                f.write("""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentation</title>
+</head>
+<body>
+</body>
+</html>""")
+        else:
+            print(f"📖 Opening existing HTML file: {html_file}")
+
+        # Web server needs to run from the directory of the file
+        os.chdir(file_dir)
+        Handler = http.server.SimpleHTTPRequestHandler
+        httpd = socketserver.TCPServer(("", PORT), Handler)
+        
+        server_thread = threading.Thread(target=httpd.serve_forever)
+        server_thread.daemon = True
+        server_thread.start()
+        print(f"🌍 Starting web server at http://localhost:{PORT}")
+
+        webbrowser.open_new_tab(f"http://localhost:{PORT}/{os.path.basename(html_file)}")
+
+        event_handler = FileChangeHandler(markdown_file, html_file)
         observer = Observer()
-        # Watch the directory of the file, not the file itself
-        observer.schedule(event_handler, path=os.path.dirname(markdown_file), recursive=False)
+        observer.schedule(event_handler, path=file_dir, recursive=False)
         observer.start()
         print(f'Watching for changes in {markdown_file}. Press Ctrl+C to stop.')
 
@@ -80,5 +119,6 @@ if __name__ == "__main__":
                 time.sleep(1)
         except KeyboardInterrupt:
             observer.stop()
-            print("Observer stopped. Exiting.")
+            print("\\nObserver stopped. Exiting.")
+        httpd.shutdown()
         observer.join()
