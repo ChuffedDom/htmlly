@@ -5,6 +5,7 @@ from datetime import datetime
 import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+import slide_generator as sg
 
 
 class FileChangeHandler(FileSystemEventHandler):
@@ -14,13 +15,34 @@ class FileChangeHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if not event.is_directory and os.path.abspath(event.src_path) == self.watch_file:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            print(f"[{timestamp}] File saved: {self.watch_file}")
+            print(f"📄 [{timestamp}] File saved: {self.watch_file}")
+
             with open(self.watch_file, 'r') as f:
-                for i, line in enumerate(f, 1):
-                    if '$lide ' in line:
-                        # Split the line at "$lide " and take the second part
-                        slide_command = line.split('$lide ', 1)[1].strip()
-                        print(f"  Found command on line {i}: {slide_command}")
+                lines = f.readlines()
+
+            slides = []
+            current_slide_args = None
+
+            for line in lines:
+                if '$lide ' in line:
+                    slide_command = line.split('$lide ', 1)[1].strip().replace(" ", "_")
+                    slides.append({'command': slide_command, 'args': []})
+                    current_slide_args = slides[-1]['args']
+                elif current_slide_args is not None:
+                    if line.strip():
+                        current_slide_args.append(line.strip())
+                    else:
+                        # Stop collecting arguments for the current slide on a blank line
+                        current_slide_args = None
+            
+            for slide in slides:
+                command = slide['command']
+                args = slide['args']
+                
+                if hasattr(sg, command):
+                    getattr(sg, command)(args)
+                else:
+                    print(f"  🤔 Unknown command: {command}")
 
 
 def select_markdown_file():
