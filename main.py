@@ -14,7 +14,13 @@ class FileChangeHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if not event.is_directory and os.path.abspath(event.src_path) == self.watch_file:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            print(f'[{timestamp}] File saved: {self.watch_file}')
+            print(f"[{timestamp}] File saved: {self.watch_file}")
+            with open(self.watch_file, 'r') as f:
+                for i, line in enumerate(f, 1):
+                    if '$lide ' in line:
+                        # Split the line at "$lide " and take the second part
+                        slide_command = line.split('$lide ', 1)[1].strip()
+                        print(f"  Found command on line {i}: {slide_command}")
 
 
 def select_markdown_file():
