@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation</title>
-    <link rel="stylesheet" href="style.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap");
+      :root {
+        --bg-grey: #191919;
+        --card-grey: #303030;
+        --bg-blue: #0b0d1d;
+        --card-blue: #232534;
+        --accent-gold: #faea95;
+        --accent-pink: #ff00ff;
+        --accent-cyan: #0df1b1;
+        --accent-coral: #f6084c;
+        --text-white: #e6fef7;
+      }
+
       body,
       html {
         margin: 0;
         padding: 0;
         height: 100%;
         overflow: hidden; /* Prevents scrollbars on the body */
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text-white);
+        background-color: var(--bg-grey);
+        background-image: radial-gradient(var(--card-grey) 1px, transparent 0);
+        background-size: 20px 20px;
       }
       #presentation {
         height: 100vh;
@@ -20,13 +39,93 @@
       }
       .slide {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "JetBrains Mono", monospace;
       }
     </style>
   </head>
   <body>
-    <div id="presentation"><div class="slide"> <h1>The 2001 WWE Royal Rumble</h1>  <h2>An analysis of one of the greatest rumbles of ALL time.</h2> </div><div class="slide"> <h1>Dom</h1>  <p>A wrestling fan since the 90s.</p> </div><div class="slide"> <h1>A Rumble for the Ages</h1>  <p>The 2001 Royal Rumble is often cited as one of the best in WWE history, marking the peak of the Attitude Era with a star-studded lineup.</p> </div><div class="slide"> <p>Kane's performance was legendary. He eliminated a record 11 superstars, a record that stood for 13 years. He was the runner-up, being the last man eliminated by the winner, Stone Cold Steve Austin.</p> </div><div class="slide"> <h1>THREE-TIME RUMBLE WINNER</h1> </div><div class="slide"> <h1>Notable Entrants</h1>  <ul>
+    <div id="presentation"><div class="slide cover-slide">
+   <h1>The 2001</h1>  <h1>WWE Royal Rumble</h1>  <h2>An analysis of one of the greatest rumbles of ALL time.</h2> 
+</div>
+
+<style>
+  .cover-slide {
+    align-items: flex-start;
+    text-align: left;
+    padding: 3vh;
+  }
+  .cover-slide h1 {
+    font-size: 9vh;
+    background-color: var(--accent-coral);
+    color: var(--bg-grey);
+    padding: 0.25em 0.5em;
+    margin: 2vh 0;
+  }
+  .cover-slide h2 {
+    color: var(--accent-gold);
+    font-size: 6vh;
+    font-family: "Inter", sans-serif;
+    margin: 1vh 0;
+  }
+</style><div class="slide about-me-slide">
+   <h1>Dom</h1>  <p>A wrestling fan since the 90s!</p> 
+</div>
+
+<style>
+  .about-me-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide title-text-slide">
+   <h2>A Rumble for the Ages</h2>  <p>The 2001 Royal Rumble is often cited as one of the best in WWE history, marking the peak of the Attitude Era with a star-studded lineup.</p> 
+</div>
+
+<style>
+  .title-text-slide {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .title-text-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+  }
+  .title-text-slide p {
+    font-size: 5.5vh;
+  }
+</style><div class="slide singular-paragraph-slide">
+   <p>Kane's performance was legendary. He eliminated a record 11 superstars, a record that stood for 13 years. He was the runner-up, being the last man eliminated by the winner, Stone Cold Steve Austin.</p> 
+</div>
+
+<style>
+  .singular-paragraph-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide big-text-slide">
+   <h1>THREE-TIME RUMBLE WINNER</h1> 
+</div>
+
+<style>
+  .big-text-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide title-list-slide">
+   <h1>Notable Entrants</h1>  <ul>
 <li>The Rock</li>
 </ul>  <ul>
 <li>Kane</li>
@@ -36,7 +135,79 @@
 <li>Rikishi</li>
 </ul>  <ul>
 <li>"Stone Cold" Steve Austin</li>
-</ul> </div><p>Unknown command: to-do</p><div class="slide"> <h1>The Texas Rattlesnake</h1>  <p><img alt="Stone Cold Steve Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> </div><div class="slide"> <h2>Key Moments</h2>  <h3>Drew Carey Enters</h3>  <p>The comedian's brief, and terrified, appearance was a classic Attitude Era moment.</p>  <h3>Kane's Dominance</h3>  <p>The Big Red Machine cleared the ring multiple times, looking unstoppable.</p> </div><div class="slide"> <h1>The Final Three</h1>  <h3>"Stone Cold" Steve Austin</h3>  <p>The eventual winner, a bloody mess after being attacked by Triple H earlier.</p>  <h3>Kane</h3>  <p>The iron man of the match, setting an elimination record.</p>  <h3>The Rock</h3>  <p>A top contender who came up just short.</p> </div><div class="slide"> <h1>Surprise Entrants</h1>  <h3>Haku</h3>  <p>Returned to the WWE after a run in WCW.</p>  <h3>The Honky Tonk Man</h3>  <p>His guitar was quickly smashed over his own head by Kane.</p>  <h3>Drew Carey</h3>  <p>Promoting his "Improv All-Stars" show.</p>  <h3>Rikishi</h3>  <p>Dominated early before being eliminated by The Rock.</p> </div><div class="slide"> <h1>The Winner</h1>  <p><img alt="A small image of Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> </div><div class="slide"> <h1>Elimination Order (First 5)</h1>  <ol>
+</ul> 
+</div>
+
+<style>
+  .title-list-slide {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .title-list-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+  }
+
+  .title-list-slide li {
+    font-size: 4vh;
+    margin-left: 2em;  
+  }<p>Unknown command: to-do</p><div class="slide title-image-slide">
+   <h1>The Texas Rattlesnake</h1>  <p><img alt="Stone Cold Steve Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> 
+</div>
+
+<style>
+  .title-image-slide {
+    justify-content: flex-start;
+  }
+  .title-image-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+    margin-bottom: 5vh;
+    margin-block-start: 0;
+  }
+  .title-image-slide p {
+    font-size: 8vh;
+    margin: 0;
+  }
+    .title-image-slide img {
+        max-width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+    }<div class="slide group-of-two-slide">
+   <h2>Key Moments</h2>  <h3>Drew Carey Enters</h3>  <p>The comedian's brief, and terrified, appearance was a classic Attitude Era moment.</p>  <h3>Kane's Dominance</h3>  <p>The Big Red Machine cleared the ring multiple times, looking unstoppable.</p> 
+</div>
+
+<style>
+  .group-of-two-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide group-of-three-slide">
+   <h1>The Final Three</h1>  <h3>"Stone Cold" Steve Austin</h3>  <p>The eventual winner, a bloody mess after being attacked by Triple H earlier.</p>  <h3>Kane</h3>  <p>The iron man of the match, setting an elimination record.</p>  <h3>The Rock</h3>  <p>A top contender who came up just short.</p> 
+</div>
+
+<style>
+  .group-of-three-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide group-of-four-slide">
+   <h1>Surprise Entrants</h1>  <h3>Haku</h3>  <p>Returned to the WWE after a run in WCW.</p>  <h3>The Honky Tonk Man</h3>  <p>His guitar was quickly smashed over his own head by Kane.</p>  <h3>Drew Carey</h3>  <p>Promoting his "Improv All-Stars" show.</p>  <h3>Rikishi</h3>  <p>Dominated early before being eliminated by The Rock.</p> 
+</div>
+
+<style>
+  .group-of-four-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide big-text-small-image-slide">
+   <h1>The Winner</h1>  <p><img alt="A small image of Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> 
+</div>
+
+<style>
+  .big-text-small-image-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide loop-list-slide">
+   <h1>Elimination Order (First 5)</h1>  <ol>
 <li>Jeff Hardy</li>
 </ol>  <ol>
 <li>Bull Buchanan</li>
@@ -46,7 +217,30 @@
 <li>Faarooq</li>
 </ol>  <ol>
 <li>Drew Carey</li>
-</ol> </div><div class="slide"> <p><img alt="A big image of the ring" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/The-Rock-Steve-Austin-2001-Royal-Rumble-768x579.jpg" /></p> </div><div class="slide"> <h1>Thanks for watching!</h1>  <p>Any questions?</p> </div></div>
+</ol> 
+</div>
+
+<style>
+  .loop-list-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide just-image-slide">
+   <p><img alt="A big image of the ring" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/The-Rock-Steve-Austin-2001-Royal-Rumble-768x579.jpg" /></p> 
+</div>
+
+<style>
+  .just-image-slide p {
+    font-size: 8vh;
+  }
+</style><div class="slide sign-off-slide">
+   <h1>Thanks for watching!</h1>  <p>Any questions?</p> 
+</div>
+
+<style>
+  .sign-off-slide p {
+    font-size: 8vh;
+  }
+</style></div>
     <script>
       let lastModified = null;
       setInterval(() => {

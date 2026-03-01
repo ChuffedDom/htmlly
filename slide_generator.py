@@ -42,7 +42,7 @@ def singular_paragraph(args):
 
 def to_do(args):
     print(f"✅ To-Do function called with: {args}")
-    return render_slide('to_do', args)
+
 
 def big_text(args):
     print(f"🔠 Big Text function called with: {args}")

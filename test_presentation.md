@@ -1,13 +1,14 @@
 $lide cover
-# The 2001 WWE Royal Rumble
+# The 2001 
+#   WWE Royal Rumble
 ## An analysis of one of the greatest rumbles of ALL time.
 
 $lide about me
 # Dom
-A wrestling fan since the 90s.
+A wrestling fan since the 90s!
 
 $lide title_text
-# A Rumble for the Ages
+## A Rumble for the Ages
 The 2001 Royal Rumble is often cited as one of the best in WWE history, marking the peak of the Attitude Era with a star-studded lineup.
 
 $lide singular_paragraph
