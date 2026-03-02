@@ -7,8 +7,8 @@
     - [x] create cover
         - [x] build html template
         - [x] write python function
-    - [ ] create about Me
-        - [ ] build html template
+    - [x] create about Me
+        - [x] build html template
         - [x] write python function
     - [x] create title_list
         - [x] build html template

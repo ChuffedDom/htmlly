@@ -1,9 +1,66 @@
 <div class="slide about-me-slide">
-  {% for arg in args %} {{ arg|safe }} {% endfor %}
+  <div class="item">
+    <ul>
+      <li>Founder at Chuffed Coaching</li>
+      <li>5 years helping startups</li>
+      <li>Head of Product at Tammwe</li>
+      <li>Over a Decade in Tech</li>
+      <li>History of Unicorns</li>
+    </ul>
+  </div>
+  <div class="item card">
+    <img
+      src="https://chuffedcoaching.com/launchpad/me-pineapple.png"
+      alt="Me wearing a pineapple shirt and smiling"
+    />
+    <h2>Dom Maurice</h2>
+  </div>
 </div>
 
 <style>
-  .about-me-slide p {
-    font-size: 8vh;
+  .about-me-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+  }
+
+  .about-me-slide .item {
+    width: 40vw;
+  }
+
+  .about-me-slide .card {
+    background-color: var(--card-blue);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-slide .card h2 {
+    font-size: 6vh;
+    color: var(--text-white); /* gold accent for big text */
+    margin-bottom: 2vh;
+    background-color: var(--accent-coral);
+    margin: 0;
+    padding: 2vh 0;
+    border-radius: 0 0 2vh 2vh;
+    width: 100%;
+  }
+
+  .about-me-slide ul li {
+    text-align: left;
+    font-size: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  .about-me-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 2vh;
+    margin-top: 2vh;
   }
 </style>
