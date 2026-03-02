@@ -28,17 +28,17 @@
     - [x] create big_text
         - [x] build html template
         - [x] write python function
-    - [ ] create group_of_two
+    - [x] create group_of_two
         - [x] build html template
         - [x] write python function
-    - [ ] create group_of_three
-        - [ ] build html template
+    - [x] create group_of_three
+        - [x] build html template
         - [x] write python function
-    - [ ] create group_of_four
-        - [ ] build html template
+    - [x] create group_of_four
+        - [x] build html template
         - [x] write python function
-    - [ ] create big_text_small_image
-        - [ ] build html template
+    - [x] create big_text_small_image
+        - [x] build html template
         - [x] write python function
     - [ ] create loop_list
         - [ ] build html template

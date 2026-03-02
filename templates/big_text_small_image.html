@@ -1,9 +1,42 @@
 <div class="slide big-text-small-image-slide">
-  {% for arg in args %} {{ arg|safe }} {% endfor %}
+  <div class="item">{{ args[0] }}</div>
+  <!-- big text -->
+  <div class="item">{{ args[1] }}</div>
+  <!-- image -->
 </div>
 
 <style>
-  .big-text-small-image-slide p {
+  .big-text-small-image-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+  }
+
+  .big-text-small-image-slide .item {
+    margin: 1vh 0;
+    width: 40vw;
+  }
+
+  .big-text-small-image-slide h2 {
     font-size: 8vh;
+    color: var(--accent-gold, #ffd700); /* gold accent for big text */
+    margin-bottom: 2vh;
+  }
+
+  .big-text-small-image-slide h3 {
+    font-size: 6vh;
+    color: var(--accent-cyan, #00ffff); /* cyan accent for smaller text */
+    margin-bottom: 1vh;
+  }
+
+  .big-text-small-image-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 2vh;
+    margin-top: 2vh;
   }
 </style>
