@@ -42,7 +42,35 @@ def singular_paragraph(args):
 
 def to_do(args):
     print(f"✅ To-Do function called with: {args}")
-
+    # print args for debugging
+    newargs = []
+    for i, arg in enumerate(args):
+        print(f"  Argument {i}: {arg}")
+        # check if the argument is a markdown heading
+        if arg.startswith("## "):
+            print("    This argument is a markdown heading.")
+            newargs.append(arg)
+        if arg.startswith("- [ ] "):
+            print("    This argument is a markdown to-do item.")
+            # add the to-do item to the list of todos
+            todo_item = arg[6:]
+            print(f"    Extracted to-do item: {todo_item}")
+            newargs.append("◻ " + todo_item)
+        elif arg.startswith("\t- [ ] ") or arg.startswith("  - [ ] "):
+            print("    This argument is a markdown nested to-do item.")
+            # add the nested to-do item to the list of todos
+            # strip the indentation and "- [ ] "
+            if arg.startswith("\t- [ ] "):
+                todo_item = arg[7:]
+            else:
+                todo_item = arg[8:]
+            print(f"    Extracted nested to-do item: {todo_item}")
+            # append a tab character to indicate it's a nested item
+            todo_item = "&nbsp;" * 4 + "◻ " + todo_item
+            newargs.append(todo_item)
+    # print the todo list for debugging
+    print(f"  New Args List: {newargs}")
+    return render_slide('to_do', newargs)
 
 def big_text(args):
     print(f"🔠 Big Text function called with: {args}")
