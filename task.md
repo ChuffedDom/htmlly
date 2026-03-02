@@ -17,19 +17,19 @@
         - [x] build html template
         - [x] write python function
     - [x] create title_image
-        - [ ] build html template
+        - [x] build html template
         - [x] write python function
     - [x] create singular_paragraph
         - [x] build html template
         - [x] write python function
-    - [ ] create to-do
-        - [ ] build html template
+    - [x] create to-do
+        - [x] build html template
         - [x] write python function
-    - [ ] create big_text
-        - [ ] build html template
+    - [x] create big_text
+        - [x] build html template
         - [x] write python function
     - [ ] create group_of_two
-        - [ ] build html template
+        - [x] build html template
         - [x] write python function
     - [ ] create group_of_three
         - [ ] build html template
@@ -43,8 +43,8 @@
     - [ ] create loop_list
         - [ ] build html template
         - [x] write python function
-    - [ ] create just Image
-        - [ ] build html template
+    - [x] create just Image
+        - [x] build html template
         - [x] write python function
     - [ ] create sign_off
         - [ ] build html template

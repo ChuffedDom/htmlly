@@ -70,8 +70,11 @@ def big_text(args):
     print(f"🔠 Big Text function called with: {args}")
     return render_slide('big_text', args)
 
+
 def group_of_two(args):
     print(f"👯 Group of Two function called with: {args}")
+    # this slide expects five arguments: left title, left content, 
+    # optional connector, right title, right content
     return render_slide('group_of_two', args)
 
 def group_of_three(args):

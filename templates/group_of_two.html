@@ -1,9 +1,58 @@
 <div class="slide group-of-two-slide">
-  {% for arg in args %} {{ arg|safe }} {% endfor %}
+  <div class="card">{{ args[0]|safe }} {{ args[1]|safe }}</div>
+  {{ args[2]|safe }}
+  <div class="card">{{ args[3]|safe }} {{ args[4]|safe }}</div>
 </div>
 
 <style>
+  /* wrapper uses flex so the two cards sit side-by-side */
+  .group-of-two-slide {
+    display: flex;
+    justify-content: space-between; /* one card left, one right */
+    padding: 5vh 0;
+    flex-direction: row;
+    padding: 2em;
+  }
+
+  .group-of-two-slide .card {
+    background-color: var(
+      --card-blue,
+      #007bff
+    ); /* use CSS variable --card-blue */
+    padding: 3vh 2vw;
+    border-radius: 4vh;
+    width: 48%;
+    box-sizing: border-box;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .group-of-two-slide .card h2 {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-two-slide .card h3 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-two-slide .card p {
+    font-size: 4vh;
+    color: var(--text-white, #ffffff); /* white text for card content */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
+    margin: 3vh 0;
+  }
+
   .group-of-two-slide p {
-    font-size: 8vh;
+    font-size: 6vh;
+    color: var(--accent-gold, #ffd700); /* gold accent for connector */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
   }
 </style>
