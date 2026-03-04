@@ -641,6 +641,28 @@
   }
 </style></div>
     <script>
+      const presentation = document.getElementById("presentation");
+
+      // Keyboard controls for navigation
+      document.addEventListener("keydown", (event) => {
+        const nextKeys = [" ", "ArrowDown", "ArrowRight"];
+        const prevKeys = ["ArrowUp", "ArrowLeft"];
+
+        if (nextKeys.includes(event.key)) {
+          event.preventDefault();
+          presentation.scrollBy({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        } else if (prevKeys.includes(event.key)) {
+          event.preventDefault();
+          presentation.scrollBy({
+            top: -window.innerHeight,
+            behavior: "smooth",
+          });
+        }
+      });
+
       let lastModified = null;
       setInterval(() => {
         fetch(window.location.href, { method: "HEAD" }).then((response) => {
