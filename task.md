@@ -46,16 +46,20 @@
     - [x] create just Image
         - [x] build html template
         - [x] write python function
-    - [ ] create sign_off
-        - [ ] build html template
+    - [x] create sign_off
+        - [x] build html template
         - [x] write python function
 - [x] Core Application
     - [x] Watch the markdown file for changes
     - [x] Parse the markdown file to identify slide commands
     - [x] Process slide data and pass it to the correct Python function
     - [x] Generate the final HTML file
-- [ ] User Interface/Experience
+- [x] User Interface/Experience
     - [x] Create the main HTML shell for the presentation
     - [x] Create a separate CSS file for slide styling
     - [x] Implement responsive design for different aspect ratios
-    - [ ] Implement JavaScript for keyboard navigation (scrolling between slides)
+    - [x] Implement JavaScript for keyboard navigation (scrolling between slides)
+- [ ] Quality of life
+    - [ ] When on a slide, the refresh need to return to the same slide
+    - [ ] Fix image sizes on title image and just image to fill the slide
+        - [ ] also add border radius

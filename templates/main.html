@@ -94,6 +94,48 @@
           lastModified = newLastModified;
         });
       }, 1000);
+
+      // New script for slide navigation and persistence
+      const slides = document.querySelectorAll(".slide");
+      slides.forEach((slide, index) => {
+        if (!slide.id) {
+          slide.id = `slide-${index}`;
+        }
+      });
+
+      const observerOptions = {
+        root: presentation,
+        rootMargin: "0px",
+        threshold: 0.7, // A slide is considered active when 70% of it is visible
+      };
+
+      const slideObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Update URL hash when a new slide becomes active
+            window.history.replaceState(null, null, `#${entry.target.id}`);
+          }
+        });
+      }, observerOptions);
+
+      slides.forEach((slide) => {
+        slideObserver.observe(slide);
+      });
+
+      // Scroll to the slide specified in the URL hash on page load
+      if (window.location.hash) {
+        try {
+          const initialSlide = document.querySelector(window.location.hash);
+          if (initialSlide) {
+            presentation.scrollTo({
+              top: initialSlide.offsetTop,
+              behavior: "instant", // Use "instant" to avoid smooth scroll on load
+            });
+          }
+        } catch (error) {
+          console.error("Error scrolling to initial slide:", error);
+        }
+      }
     </script>
   </body>
 </html>
