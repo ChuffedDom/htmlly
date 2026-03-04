@@ -38,7 +38,7 @@ class FileChangeHandler(FileSystemEventHandler):
                     current_slide_args = slides[-1]['args']
                 elif current_slide_args is not None:
                     if line.strip():
-                        current_slide_args.append(line.rstrip('\\n'))
+                        current_slide_args.append(line.rstrip('\n'))
                     else:
                         # Stop collecting arguments for the current slide on a blank line
                         current_slide_args = None

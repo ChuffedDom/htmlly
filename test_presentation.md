@@ -1,82 +1,71 @@
 $lide cover
-# The 2001 
-#   WWE Royal Rumble
-## An analysis of one of the greatest rumbles of ALL time.
+# A
+# Presentation by
+# @chuffeddom
+## how to build a markdown to html slides app
 
 $lide about me
-# Dom
-A wrestling fan since the 90s!
 
-$lide title_text
-## A Rumble for the Ages
-The 2001 Royal Rumble is often cited as one of the best in WWE history, marking the peak of the Attitude Era with a star-studded lineup.
+$lide title list
+## Here is a list of important items
+- Item 1 is great
+- Item 2 might be a little better
+- But Item 3, might be cool
+- And finally, 4 is just meh
 
-$lide singular_paragraph
-Kane's performance was legendary. He eliminated a record 11 superstars, a record that stood for 13 years. He was the runner-up, being the last man eliminated by the winner, Stone Cold Steve Austin.
+$lide title text
+## This is a really boring title to put in a slide
+Trying to come up with interesting titles is hard, and should not be lightly looked upon.
 
-$lide big_text
-# THREE-TIME RUMBLE WINNER
+$lide title image
+## Wakey wakey
+![](https://brobible.com/wp-content/uploads/2025/03/undertaker-meme-waking-up-from-dreams.jpg?resize=768,432)
 
-$lide title_list
-# Notable Entrants
-* The Rock
-* Kane
-* The Undertaker
-* Rikishi
-* "Stone Cold" Steve Austin
+$lide singular paragraph
+You know they say that all men are created equal, but you look at me and you look at Samoa Joe and you can see that statement is not true.
 
-$lide to-do
-# Match Analysis
-- [ ] Watch the full match again.
-- [ ] Note all eliminations by Kane.
-- [ ] Analyze the impact of Drew Carey's entry.
+$lide to do
+## To do
+- [ ] This is the first thing to do
+	- [ ] But as a subtask I need this
+- [ ] Next move onto these things that are important
+- [ ] Now do this
+	- [ ] Don't forget the last thing though
+- [ ] And finally this thing right here
 
-$lide title_image
-# The Texas Rattlesnake
-![Stone Cold Steve Austin](https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg)
+$lide big text
+## This is the thing you really need to know, so write it down
 
-$lide group_of_two
-## Key Moments
-### Drew Carey Enters
-The comedian's brief, and terrified, appearance was a classic Attitude Era moment.
-### Kane's Dominance
-The Big Red Machine cleared the ring multiple times, looking unstoppable.
+$lide group of two
+### Technical Excellence
+Concern over how to build, i.e. writing the code
+vs
+### Market Relevance
+Experimenting to know what to build
 
-$lide group_of_three
-# The Final Three
-### "Stone Cold" Steve Austin
-The eventual winner, a bloody mess after being attacked by Triple H earlier.
-### Kane
-The iron man of the match, setting an elimination record.
-### The Rock
-A top contender who came up just short.
+$lide group of three
+### First
+Some stuff about the first thing
+### Second
+Some other stuff for the second thing
+### Third
+The last bit of course
 
-$lide group_of_four
-# Surprise Entrants
-### Haku
-Returned to the WWE after a run in WCW.
-### The Honky Tonk Man
-His guitar was quickly smashed over his own head by Kane.
-### Drew Carey
-Promoting his "Improv All-Stars" show.
-### Rikishi
-Dominated early before being eliminated by The Rock.
+$lide group of four
+### Empathy
+For the user (pain points)
+### Strategic
+They can connect a small button change to the company’s 5-year goal.
+### Intuition
+They use information to validate hypotheses, not just to settle arguments.
+### Communication
+They "translate" between the CEO, the lead dev, and the end-user.
 
-$lide big_text_small_image
-# The Winner
-![A small image of Austin](https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg)
+$lide big text small image
+## Here is the text
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Toni_Storm%2C_September_2023_%28cropped%29.jpg/250px-Toni_Storm%2C_September_2023_%28cropped%29.jpg)
 
-$lide loop_list
-# Elimination Order (First 5)
-1. Jeff Hardy
-2. Bull Buchanan
-3. Matt Hardy
-4. Faarooq
-5. Drew Carey
+$lide just image
+![](https://thearmbarexpress.wordpress.com/wp-content/uploads/2024/04/maxresdefault.jpg)
 
-$lide just_image
-![A big image of the ring](https://prowrestlingstories.com/wp-content/uploads/2021/07/The-Rock-Steve-Austin-2001-Royal-Rumble-768x579.jpg)
-
-$lide sign_off
-# Thanks for watching!
-Any questions?
+$lide sign off

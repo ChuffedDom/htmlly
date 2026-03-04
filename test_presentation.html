@@ -61,7 +61,7 @@
   </head>
   <body>
     <div id="presentation"><div class="slide cover-slide">
-   <h1>The 2001</h1>  <h1>WWE Royal Rumble</h1>  <h2>An analysis of one of the greatest rumbles of ALL time.</h2> 
+   <h1>A</h1>  <h1>Presentation by</h1>  <h1>@chuffeddom</h1>  <h2>how to build a markdown to html slides app</h2> 
 </div>
 
 <style>
@@ -84,57 +84,79 @@
     margin: 1vh 0;
   }
 </style><div class="slide about-me-slide">
-   <h1>Dom</h1>  <p>A wrestling fan since the 90s!</p> 
+  <div class="item">
+    <ul>
+      <li>Founder at Chuffed Coaching</li>
+      <li>5 years helping startups</li>
+      <li>Head of Product at Tammwe</li>
+      <li>Over a Decade in Tech</li>
+      <li>History of Unicorns</li>
+    </ul>
+  </div>
+  <div class="item card">
+    <img
+      src="https://chuffedcoaching.com/launchpad/me-pineapple.png"
+      alt="Me wearing a pineapple shirt and smiling"
+    />
+    <h2>Dom Maurice</h2>
+  </div>
 </div>
 
 <style>
-  .about-me-slide p {
-    font-size: 8vh;
+  .about-me-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
   }
-</style><div class="slide title-text-slide">
-   <h2>A Rumble for the Ages</h2>  <p>The 2001 Royal Rumble is often cited as one of the best in WWE history, marking the peak of the Attitude Era with a star-studded lineup.</p> 
-</div>
 
-<style>
-  .title-text-slide {
-    align-items: flex-start;
+  .about-me-slide .item {
+    width: 40vw;
+  }
+
+  .about-me-slide .card {
+    background-color: var(--card-blue);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-slide .card h2 {
+    font-size: 6vh;
+    color: var(--text-white); /* gold accent for big text */
+    margin-bottom: 2vh;
+    background-color: var(--accent-coral);
+    margin: 0;
+    padding: 2vh 0;
+    border-radius: 0 0 2vh 2vh;
+    width: 100%;
+  }
+
+  .about-me-slide ul li {
     text-align: left;
-    justify-content: flex-start;
+    font-size: 4vh;
+    margin-bottom: 4vh;
   }
-  .title-text-slide h2 {
-    color: var(--accent-gold);
-    font-size: 7vh;
-  }
-  .title-text-slide p {
-    font-size: 5.5vh;
-  }
-</style><div class="slide singular-paragraph-slide">
-   <p>Kane's performance was legendary. He eliminated a record 11 superstars, a record that stood for 13 years. He was the runner-up, being the last man eliminated by the winner, Stone Cold Steve Austin.</p> 
-</div>
 
-<style>
-  .singular-paragraph-slide p {
-    font-size: 8vh;
-  }
-</style><div class="slide big-text-slide">
-   <h1>THREE-TIME RUMBLE WINNER</h1> 
-</div>
-
-<style>
-  .big-text-slide p {
-    font-size: 8vh;
+  .about-me-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 2vh;
+    margin-top: 2vh;
   }
 </style><div class="slide title-list-slide">
-   <h1>Notable Entrants</h1>  <ul>
-<li>The Rock</li>
+   <h2>Here is a list of important items</h2>  <ul>
+<li>Item 1 is great</li>
 </ul>  <ul>
-<li>Kane</li>
+<li>Item 2 might be a little better</li>
 </ul>  <ul>
-<li>The Undertaker</li>
+<li>But Item 3, might be cool</li>
 </ul>  <ul>
-<li>Rikishi</li>
-</ul>  <ul>
-<li>"Stone Cold" Steve Austin</li>
+<li>And finally, 4 is just meh</li>
 </ul> 
 </div>
 
@@ -152,8 +174,26 @@
   .title-list-slide li {
     font-size: 4vh;
     margin-left: 2em;  
-  }<p>Unknown command: to-do</p><div class="slide title-image-slide">
-   <h1>The Texas Rattlesnake</h1>  <p><img alt="Stone Cold Steve Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> 
+  }
+</style><div class="slide title-text-slide">
+   <h2>This is a really boring title to put in a slide</h2>  <p>Trying to come up with interesting titles is hard, and should not be lightly looked upon.</p> 
+</div>
+
+<style>
+  .title-text-slide {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .title-text-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+  }
+  .title-text-slide p {
+    font-size: 5.5vh;
+  }
+</style><div class="slide title-image-slide">
+   <h2>Wakey wakey</h2>  <p><img alt="" src="https://brobible.com/wp-content/uploads/2025/03/undertaker-meme-waking-up-from-dreams.jpg?resize=768,432" /></p> 
 </div>
 
 <style>
@@ -170,75 +210,434 @@
     font-size: 8vh;
     margin: 0;
   }
-    .title-image-slide img {
-        max-width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-    }<div class="slide group-of-two-slide">
-   <h2>Key Moments</h2>  <h3>Drew Carey Enters</h3>  <p>The comedian's brief, and terrified, appearance was a classic Attitude Era moment.</p>  <h3>Kane's Dominance</h3>  <p>The Big Red Machine cleared the ring multiple times, looking unstoppable.</p> 
+  .title-image-slide img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+  }
+</style><div class="slide singular-paragraph-slide">
+   <p>You know they say that all men are created equal, but you look at me and you look at Samoa Joe and you can see that statement is not true.</p> 
 </div>
 
 <style>
-  .group-of-two-slide p {
+  .singular-paragraph-slide p {
     font-size: 8vh;
+  }
+</style><div class="slide title-list-slide todo">
+   <h2>To do</h2>  <p>◻ This is the first thing to do</p>  <p>&nbsp;&nbsp;&nbsp;&nbsp;◻ But as a subtask I need this</p>  <p>◻ Next move onto these things that are important</p>  <p>◻ Now do this</p>  <p>&nbsp;&nbsp;&nbsp;&nbsp;◻ Don't forget the last thing though</p>  <p>◻ And finally this thing right here</p> 
+</div>
+
+<style>
+  .title-list-slide {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .title-list-slide h2 {
+    color: var(--accent-gold);
+    font-size: 7vh;
+  }
+  .title-list-slide p {
+    font-size: 4vh;
+    margin: 0.5em 2em;
+  }
+</style><div class="slide big-text-slide">
+   <h2>This is the thing you really need to know, so write it down</h2> 
+</div>
+
+<style>
+  .big-text-slide p {
+    font-size: 10vh;
+    text-wrap: balance;
+  }
+
+  .big-text-slide h2 {
+    font-size: 10vh;
+    text-wrap: balance;
+    color: var(--accent-gold);
+  }
+
+  .big-text-slide h3 {
+    font-size: 8vh;
+    text-wrap: balance;
+    color: var(--accent-gold);
+  }
+</style><div class="slide group-of-two-slide">
+  <div class="card"><h3>Technical Excellence</h3> <p>Concern over how to build, i.e. writing the code</p></div>
+  <p>vs</p>
+  <div class="card"><h3>Market Relevance</h3> <p>Experimenting to know what to build</p></div>
+</div>
+
+<style>
+  /* wrapper uses flex so the two cards sit side-by-side */
+  .group-of-two-slide {
+    display: flex;
+    justify-content: space-between; /* one card left, one right */
+    padding: 5vh 0;
+    flex-direction: row;
+    padding: 2em;
+  }
+
+  .group-of-two-slide .card {
+    background-color: var(
+      --card-blue,
+      #007bff
+    ); /* use CSS variable --card-blue */
+    padding: 3vh 2vw;
+    border-radius: 4vh;
+    width: 48%;
+    box-sizing: border-box;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .group-of-two-slide .card h2 {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-two-slide .card h3 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-two-slide .card p {
+    font-size: 4vh;
+    color: var(--text-white, #ffffff); /* white text for card content */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
+    margin: 3vh 0;
+  }
+
+  .group-of-two-slide p {
+    font-size: 6vh;
+    color: var(--accent-gold, #ffd700); /* gold accent for connector */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
   }
 </style><div class="slide group-of-three-slide">
-   <h1>The Final Three</h1>  <h3>"Stone Cold" Steve Austin</h3>  <p>The eventual winner, a bloody mess after being attacked by Triple H earlier.</p>  <h3>Kane</h3>  <p>The iron man of the match, setting an elimination record.</p>  <h3>The Rock</h3>  <p>A top contender who came up just short.</p> 
+  <div class="card"><h3>First</h3> <p>Some stuff about the first thing</p></div>
+  <div class="card"><h3>Second</h3> <p>Some other stuff for the second thing</p></div>
+  <div class="card"><h3>Third</h3> <p>The last bit of course</p></div>
 </div>
 
 <style>
-  .group-of-three-slide p {
-    font-size: 8vh;
+  /* wrapper uses flex so the two cards sit side-by-side */
+  .group-of-three-slide {
+    display: flex;
+    justify-content: space-between; /* one card left, one right */
+    padding: 5vh 0;
+    flex-direction: row;
+    padding: 2em;
+    gap: 2vw; /* add some gap between the cards */
+  }
+
+  .group-of-three-slide .card {
+    background-color: var(
+      --card-blue,
+      #007bff
+    ); /* use CSS variable --card-blue */
+    padding: 3vh 2vw;
+    border-radius: 4vh;
+    width: 48%;
+    box-sizing: border-box;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .group-of-three-slide .card h2 {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-three-slide .card h3 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-three-slide .card p {
+    font-size: 4vh;
+    color: var(--text-white, #ffffff); /* white text for card content */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
+    margin: 3vh 0;
   }
 </style><div class="slide group-of-four-slide">
-   <h1>Surprise Entrants</h1>  <h3>Haku</h3>  <p>Returned to the WWE after a run in WCW.</p>  <h3>The Honky Tonk Man</h3>  <p>His guitar was quickly smashed over his own head by Kane.</p>  <h3>Drew Carey</h3>  <p>Promoting his "Improv All-Stars" show.</p>  <h3>Rikishi</h3>  <p>Dominated early before being eliminated by The Rock.</p> 
+  <div class="card"><h3>Empathy</h3> <p>For the user (pain points)</p></div>
+  <div class="card"><h3>Strategic</h3> <p>They can connect a small button change to the company’s 5-year goal.</p></div>
+  <div class="card"><h3>Intuition</h3> <p>They use information to validate hypotheses, not just to settle arguments.</p></div>
+  <div class="card"><h3>Communication</h3> <p>They "translate" between the CEO, the lead dev, and the end-user.</p></div>
 </div>
 
 <style>
-  .group-of-four-slide p {
-    font-size: 8vh;
+  .group-of-four-slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns of equal width */
+    grid-template-rows: 1fr 1fr; /* two rows of equal height */
+    justify-content: space-between; /* one card left, one right */
+    padding: 2em;
+    gap: 2vw;
+  }
+
+  .group-of-four-slide .card {
+    background-color: var(
+      --card-blue,
+      #007bff
+    ); /* use CSS variable --card-blue */
+    padding: 3vh 2vw;
+    border-radius: 4vh;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .group-of-four-slide .card h2 {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-four-slide .card h3 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  }
+
+  .group-of-four-slide .card p {
+    font-size: 3vh;
+    color: var(--text-white, #ffffff); /* white text for card content */
+    margin: 0 2vw;
+    align-self: center; /* vertically center the connector */
+    margin: 3vh 0;
   }
 </style><div class="slide big-text-small-image-slide">
-   <h1>The Winner</h1>  <p><img alt="A small image of Austin" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/Steve-Austin-2001-Royal-Rumble-768x581.jpg" /></p> 
+  <div class="item"><h2>Here is the text</h2></div>
+  <!-- big text -->
+  <div class="item"><p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Toni_Storm%2C_September_2023_%28cropped%29.jpg/250px-Toni_Storm%2C_September_2023_%28cropped%29.jpg" /></p></div>
+  <!-- image -->
 </div>
 
 <style>
-  .big-text-small-image-slide p {
-    font-size: 8vh;
+  .big-text-small-image-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
   }
-</style><div class="slide loop-list-slide">
-   <h1>Elimination Order (First 5)</h1>  <ol>
-<li>Jeff Hardy</li>
-</ol>  <ol>
-<li>Bull Buchanan</li>
-</ol>  <ol>
-<li>Matt Hardy</li>
-</ol>  <ol>
-<li>Faarooq</li>
-</ol>  <ol>
-<li>Drew Carey</li>
-</ol> 
-</div>
 
-<style>
-  .loop-list-slide p {
+  .big-text-small-image-slide .item {
+    margin: 1vh 0;
+    width: 40vw;
+  }
+
+  .big-text-small-image-slide h2 {
     font-size: 8vh;
+    color: var(--accent-gold, #ffd700); /* gold accent for big text */
+    margin-bottom: 2vh;
+  }
+
+  .big-text-small-image-slide h3 {
+    font-size: 6vh;
+    color: var(--accent-cyan, #00ffff); /* cyan accent for smaller text */
+    margin-bottom: 1vh;
+  }
+
+  .big-text-small-image-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 2vh;
+    margin-top: 2vh;
   }
 </style><div class="slide just-image-slide">
-   <p><img alt="A big image of the ring" src="https://prowrestlingstories.com/wp-content/uploads/2021/07/The-Rock-Steve-Austin-2001-Royal-Rumble-768x579.jpg" /></p> 
+   <p><img alt="" src="https://thearmbarexpress.wordpress.com/wp-content/uploads/2024/04/maxresdefault.jpg" /></p> 
 </div>
 
 <style>
   .just-image-slide p {
     font-size: 8vh;
   }
+  .just-image-slide img {
+    max-width: 90vw; /* 90% of the viewport width */
+    max-height: 80vh; /* 80% of the viewport height */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;
+    border-radius: 8vh;
+  }
 </style><div class="slide sign-off-slide">
-   <h1>Thanks for watching!</h1>  <p>Any questions?</p> 
+  <div class="card">
+    <div class="item">
+      <div class="top-card">
+        <img
+          src="https://chuffedcoaching.com/dom-maurice/Me.png"
+          alt="Dom Maurice headshot"
+        />
+        <div class="user-socials">
+          <h3>Dom Maurice</h3>
+          <h6>@chuffeddom</h6>
+          <div class="socials-row">
+            <img
+              src="https://chuffedcoaching.com/dom-maurice/icons/github.svg"
+              alt="chuffeddom on GitHub"
+            />
+            <img
+              src="https://chuffedcoaching.com/dom-maurice/icons/youtube.svg"
+              alt="chuffeddom on YouTube"
+            />
+            <img
+              src="https://chuffedcoaching.com/dom-maurice/icons/bluesky.svg"
+              alt="chuffeddom on Bluesky"
+            />
+            <img
+              src="https://chuffedcoaching.com/dom-maurice/icons/tiktok.svg"
+              alt="chuffeddom on TikTok"
+            />
+            <img
+              src="https://chuffedcoaching.com/dom-maurice/icons/substack.svg"
+              alt="chuffeddom on Substack"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="https://linkedin.com/in/dom-maurice/" class="link-row">
+          <img
+            src="https://chuffedcoaching.com/dom-maurice/icons/linkedin.svg"
+            alt="chuffeddom on LinkedIn"
+          />
+          <h6>linkedin.com/in/dom-maurice/</h6>
+        </a>
+        <a href="mailto:dom@chuffed.solutions" class="link-row">
+          <img
+            src="https://chuffedcoaching.com/dom-maurice/icons/email.svg"
+            alt="chuffeddom on Email"
+          />
+          <h6>dom@chuffed.solutions</h6>
+        </a>
+        <a href="https://chuffedcoaching.com" class="link-row">
+          <img
+            src="https://chuffedcoaching.com/dom-maurice/icons/website.svg"
+            alt="chuffeddom on Website"
+          />
+          <h6>chuffedcoaching.com</h6>
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <img
+        src="https://chuffedcoaching.com/dom-maurice/Chuffed-Coaching-Dom-QR.png"
+        alt="qrcode to page"
+      />
+    </div>
+  </div>
 </div>
 
 <style>
   .sign-off-slide p {
     font-size: 8vh;
+  }
+
+  .sign-off-slide .card {
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+  }
+
+  .socials-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .top-card {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+  }
+
+  .top-card img {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  .socials-row img {
+    height: 4.5vh;
+    width: 4.5vh;
+    /* recolour SVG icons by forcing them to white via filter */
+    filter: brightness(0) invert(1);
+  }
+
+  .top-card .user-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: flex-start;
+  }
+
+  .top-card .user-socials h6 {
+    font-size: 3.5vh;
+    margin: 0;
+  }
+
+  .top-card .user-socials h3 {
+    font-size: 4vh;
+    margin: 0;
+    color: var(--accent-gold);
+    margin-bottom: 1vh;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 3vw;
+  }
+
+  .links a.link-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vh;
+    text-decoration: none;
+    color: var(--text-white);
+  }
+
+  .links a img {
+    height: 6vh;
+    width: 6vh;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+  }
+
+  .links a h6 {
+    margin: 0;
+    font-size: 2.5vh;
+  }
+
+  .sign-off-slide .card > .item:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .sign-off-slide .card > .item:last-child img {
+    height: min(40vh, 30vw);
+    width: min(40vh, 30vw);
+    border-radius: 4vh;
   }
 </style></div>
     <script>
