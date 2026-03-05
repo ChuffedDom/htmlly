@@ -211,9 +211,11 @@
     margin: 0;
   }
   .title-image-slide img {
-    max-width: 100%;
-    max-height: 70vh;
+    height: auto;
+    width: 90vw;
+    max-width: 90vw;
     object-fit: contain;
+    border-radius: clamp(8px, 2vw, 24px);
   }
 </style><div class="slide singular-paragraph-slide">
    <p>You know they say that all men are created equal, but you look at me and you look at Samoa Joe and you can see that statement is not true.</p> 
@@ -471,12 +473,11 @@
     font-size: 8vh;
   }
   .just-image-slide img {
-    max-width: 90vw; /* 90% of the viewport width */
-    max-height: 80vh; /* 80% of the viewport height */
-    width: auto; /* Maintains aspect ratio */
+    width: 90vw; /* Maintains aspect ratio */
     height: auto; /* Maintains aspect ratio */
+    max-height: 90vh; /* Ensures it doesn't exceed viewport height */
     object-fit: contain;
-    border-radius: 8vh;
+    border-radius: clamp(16px, 4vh, 28px);
   }
 </style><div class="slide sign-off-slide">
   <div class="card">
