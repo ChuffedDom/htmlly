@@ -1,30 +1,36 @@
-import tkinter as tk
-from tkinter import filedialog
-import time
-from datetime import datetime
 import os
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
-import slide_generator as sg
-import http.server
-import socketserver
 import threading
 import webbrowser
+import socketserver
+import http.server
+from datetime import datetime
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+from textual.app import App, ComposeResult
+from textual.widgets import Header, Footer, Button, Label, Log, Static
+from textual.containers import Container, Horizontal, Vertical
+from textual import work
+
+import slide_generator as sg
 
 PORT = 8000
 
-
-
 class FileChangeHandler(FileSystemEventHandler):
-    def __init__(self, watch_file, html_file):
+    def __init__(self, watch_file, html_file, on_render_callback):
         self.watch_file = os.path.abspath(watch_file)
         self.html_file = html_file
+        self.on_render_callback = on_render_callback
+        # Initial render
+        self.render()
 
     def on_modified(self, event):
         if not event.is_directory and os.path.abspath(event.src_path) == self.watch_file:
-            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            print(f"📄 [{timestamp}] File saved: {self.watch_file}")
+            self.render()
 
+    def render(self):
+        timestamp = datetime.now().strftime('%H:%M:%S')
+        try:
             with open(self.watch_file, 'r') as f:
                 lines = f.readlines()
 
@@ -40,7 +46,6 @@ class FileChangeHandler(FileSystemEventHandler):
                     if line.strip():
                         current_slide_args.append(line.rstrip('\n'))
                     else:
-                        # Stop collecting arguments for the current slide on a blank line
                         current_slide_args = None
             
             all_slides_html = "".join(
@@ -50,82 +55,150 @@ class FileChangeHandler(FileSystemEventHandler):
                 for slide in slides
             )
 
-            # Render the main template with the slides
             main_template = sg.env.get_template("main.html")
             final_html = main_template.render(content=all_slides_html)
 
             with open(self.html_file, 'w') as f:
                 f.write(final_html)
+            
+            self.on_render_callback(f"Rendered at {timestamp}")
+        except Exception as e:
+            self.on_render_callback(f"Error: {str(e)}")
 
+class HtmllyTUI(App):
+    TITLE = "Htmlly"
+    SUBTITLE = "Markdown to Slide Generator"
+    CSS = """
+    Screen {
+        align: center middle;
+    }
+    #main-container {
+        width: 80%;
+        height: 80%;
+        border: thick $primary;
+        padding: 1 2;
+        background: $surface;
+    }
+    .status-label {
+        margin: 1 0;
+        text-style: italic;
+        color: $text-muted;
+    }
+    #file-label {
+        margin-bottom: 1;
+        color: $accent;
+        text-style: bold;
+    }
+    Log {
+        height: 1fr;
+        margin: 1 0;
+        border: sunken $panel;
+    }
+    Horizontal {
+        height: auto;
+        align: center middle;
+        margin-top: 1;
+    }
+    Button {
+        margin: 0 1;
+    }
+    """
 
-def select_markdown_file():
-    """Opens a file picker to select a markdown file."""
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.observer = None
+        self.httpd = None
+        self.markdown_file = None
+        self.html_file = None
 
-    file_path = filedialog.askopenfilename(
-        title="Select a Markdown File",
-        filetypes=(("Markdown files", "*.md"), ("All files", "*.*"))
-    )
+    def compose(self) -> ComposeResult:
+        yield Header()
+        with Container(id="main-container"):
+            yield Static("Welcome to Htmlly", id="title")
+            yield Label("No file selected", id="file-label")
+            yield Label("Status: Ready", id="status-label", classes="status-label")
+            yield Log(id="event-log")
+            with Horizontal():
+                yield Button("Select File", variant="primary", id="btn-select")
+                yield Button("Stop & Exit", variant="error", id="btn-stop")
+        yield Footer()
 
-    if file_path:
-        print(f'Selected file: {file_path}')
-    else:
-        print("No file selected.")
+    def on_mount(self) -> None:
+        self.query_one("#event-log").write_line("App started. Please select a Markdown file.")
 
-    return file_path
+    async def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "btn-select":
+            await self.handle_select_file()
+        elif event.button.id == "btn-stop":
+            self.exit()
 
-
-if __name__ == "__main__":
-    markdown_file = select_markdown_file()
-
-    if markdown_file:
-        base_name, _ = os.path.splitext(markdown_file)
-        html_file = f"{base_name}.html"
-        file_dir = os.path.dirname(markdown_file)
-
-        if not os.path.exists(html_file):
-            print(f"✨ Creating new HTML file: {html_file}")
-            with open(html_file, 'w') as f:
-                # Basic HTML structure
-                f.write("""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Presentation</title>
-</head>
-<body>
-</body>
-</html>""")
-        else:
-            print(f"📖 Opening existing HTML file: {html_file}")
-
-        # Web server needs to run from the directory of the file
-        os.chdir(file_dir)
+    @work(thread=True)
+    def handle_select_file(self) -> None:
+        # We need to run file picker in a way that works for TUI.
+        # Since we are on a desktop, we can use a small python snippet to call a native picker
+        # Or just ask for the path. Let's try to use a native picker if available via tkinter
+        # but in a separate process/thread so it doesn't block TUI.
+        import tkinter as tk
+        from tkinter import filedialog
         
-        # Allow the server to re-use the address
+        root = tk.Tk()
+        root.withdraw()
+        file_path = filedialog.askopenfilename(
+            title="Select a Markdown File",
+            filetypes=(("Markdown files", "*.md"), ("All files", "*.*"))
+        )
+        root.destroy()
+        
+        if file_path:
+            self.call_from_thread(self.start_watching, file_path)
+
+    def start_watching(self, file_path: str) -> None:
+        self.markdown_file = file_path
+        self.query_one("#file-label").update(f"Watching: {os.path.basename(file_path)}")
+        self.query_one("#event-log").write_line(f"Selected: {file_path}")
+        
+        base_name, _ = os.path.splitext(self.markdown_file)
+        self.html_file = f"{base_name}.html"
+        file_dir = os.path.dirname(self.markdown_file)
+
+        # Web Server Thread
+        self.run_server(file_dir)
+        
+        # Watcher
+        event_handler = FileChangeHandler(self.markdown_file, self.html_file, self.log_render)
+        self.observer = Observer()
+        self.observer.schedule(event_handler, path=file_dir, recursive=False)
+        self.observer.start()
+        
+        webbrowser.open_new_tab(f"http://localhost:{PORT}/{os.path.basename(self.html_file)}")
+        self.query_one("#status-label").update("Status: Running and watching...")
+        self.query_one("#btn-select").disabled = True
+
+    @work(thread=True)
+    def run_server(self, directory: str) -> None:
+        os.chdir(directory)
         socketserver.TCPServer.allow_reuse_address = True
         Handler = http.server.SimpleHTTPRequestHandler
-        httpd = socketserver.TCPServer(("", PORT), Handler)
-        
-        server_thread = threading.Thread(target=httpd.serve_forever)
-        server_thread.daemon = True
-        server_thread.start()
-        print(f"🌍 Starting web server at http://localhost:{PORT}")
+        self.httpd = socketserver.TCPServer(("", PORT), Handler)
+        self.query_one("#event-log").write_line(f"Server started on http://localhost:{PORT}")
+        self.httpd.serve_forever()
 
-        webbrowser.open_new_tab(f"http://localhost:{PORT}/{os.path.basename(html_file)}")
+    def log_render(self, message: str) -> None:
+        self.call_from_thread(self._update_log, message)
 
-        event_handler = FileChangeHandler(markdown_file, html_file)
-        observer = Observer()
-        observer.schedule(event_handler, path=file_dir, recursive=False)
-        observer.start()
-        print(f'Watching for changes in {markdown_file}. Press Ctrl+C to stop.')
+    def _update_log(self, message: str) -> None:
+        self.query_one("#event-log").write_line(message)
+        if "Error" in message:
+            self.query_one("#status-label").update(f"Status: {message}")
+        else:
+            self.query_one("#status-label").update(f"Status: {message}")
 
-        try:
-            while True:
-                time.sleep(1)
-        except KeyboardInterrupt:
-            observer.stop()
-            print("\\nObserver stopped. Exiting.")
-        httpd.shutdown()
-        observer.join()
+    def on_unmount(self) -> None:
+        if self.observer:
+            self.observer.stop()
+        if self.httpd:
+            self.httpd.shutdown()
+
+if __name__ == "__main__":
+    app = HtmllyTUI()
+    app.run()
