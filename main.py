@@ -93,7 +93,8 @@ class FilePickerScreen(ModalScreen[Path]):
     def compose(self) -> ComposeResult:
         with Vertical(id="picker-container"):
             yield Static("Select a Markdown File", id="picker-title")
-            yield DirectoryTree("./", id="dir-tree")
+            # Set root to home directory to allow navigation
+            yield DirectoryTree(str(Path.home()), id="dir-tree")
             with Horizontal(id="picker-buttons"):
                 yield Button("Cancel", variant="error", id="cancel")
 
