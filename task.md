@@ -60,6 +60,7 @@
     - [x] Implement responsive design for different aspect ratios
     - [x] Implement JavaScript for keyboard navigation (scrolling between slides)
 - [ ] Quality of life
+    - [x] Create a GUI control panel to manage the application (start/stop)
     - [x] When on a slide, the refresh need to return to the same slide
     - [ ] Fix image sizes on title image and just image to fill the slide
         - [ ] also add border radius

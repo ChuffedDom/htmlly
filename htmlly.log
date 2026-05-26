@@ -1,0 +1,401 @@
+2026-05-24 19:04:47,843 - INFO - --- Application Session Start ---
+2026-05-24 19:04:47,848 - DEBUG - Using selector: EpollSelector
+2026-05-24 19:04:47,883 - INFO - App started. Click 'Select File' to begin.
+2026-05-24 19:04:47,884 - INFO - TUI mounted and ready
+2026-05-24 19:04:50,625 - INFO - Button pressed: btn-select
+2026-05-24 19:04:53,811 - INFO - File selected via picker: /home/dom/Documents/Projects/htmlly/test_presentation.md
+2026-05-24 19:04:53,812 - INFO - Selected: /home/dom/Documents/Projects/htmlly/test_presentation.md
+2026-05-24 19:04:53,812 - INFO - Starting server in /home/dom/Documents/Projects/htmlly
+2026-05-24 19:04:53,813 - INFO - Starting render for /home/dom/Documents/Projects/htmlly/test_presentation.md
+2026-05-24 19:04:53,839 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,840 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,840 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,841 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,841 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,842 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,843 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,844 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,845 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,846 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,846 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,846 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,846 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,848 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,849 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,850 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,851 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,852 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,853 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,854 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,855 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,856 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,857 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,858 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,859 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,860 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,860 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,860 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,860 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,861 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,861 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,861 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,861 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,864 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,865 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,866 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,868 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,869 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,870 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,872 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,873 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,874 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,875 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,876 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,877 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2026-05-24 19:04:53,879 - DEBUG - Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2026-05-24 19:04:53,884 - ERROR - Failed to start watching: The `call_from_thread` method must run in a different thread from the app
+Traceback (most recent call last):
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 84, in render
+    self.on_render_callback(f"Rendered at {timestamp}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 274, in log_message_from_thread
+    self.call_from_thread(self.log_message, message)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dom/Documents/Projects/htmlly/.venv/lib/python3.14/site-packages/textual/app.py", line 1822, in call_from_thread
+    raise RuntimeError(
+        "The `call_from_thread` method must run in a different thread from the app"
+    )
+RuntimeError: The `call_from_thread` method must run in a different thread from the app
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 244, in start_watching
+    event_handler = FileChangeHandler(self.markdown_file, self.html_file, self.log_message_from_thread)
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 44, in __init__
+    self.render()
+    ~~~~~~~~~~~^^
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 88, in render
+    self.on_render_callback(f"Error: {str(e)}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/dom/Documents/Projects/htmlly/main.py", line 274, in log_message_from_thread
+    self.call_from_thread(self.log_message, message)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dom/Documents/Projects/htmlly/.venv/lib/python3.14/site-packages/textual/app.py", line 1822, in call_from_thread
+    raise RuntimeError(
+        "The `call_from_thread` method must run in a different thread from the app"
+    )
+RuntimeError: The `call_from_thread` method must run in a different thread from the app
+
+2026-05-24 19:04:53,885 - INFO - Error: The `call_from_thread` method must run in a different thread from the app
+2026-05-24 19:04:53,888 - INFO - Server started on http://localhost:8000
+2026-05-24 19:05:07,494 - INFO - Button pressed: btn-stop
+2026-05-24 19:05:07,494 - INFO - Stop button pressed, exiting
+2026-05-24 19:05:07,694 - INFO - Unmounting app
+2026-05-24 19:05:07,695 - INFO - App unmounted

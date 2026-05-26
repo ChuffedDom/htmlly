@@ -1,3 +1,10 @@
+# Logs
+htmlly.log
+
+# Generated HTML
+test_presentation.html
+SLIDE_COMMANDS_GUIDE.html
+
 # macOS
 .DS_Store
 .AppleDouble
