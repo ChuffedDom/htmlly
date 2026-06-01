@@ -1,5 +1,5 @@
 <div class="slide about-me-slide">
-  <div class="item">
+  <div class="item list-panel">
     <ul>
       <li>Founder at Chuffed Coaching</li>
       <li>5 years helping startups</li>
@@ -8,12 +8,17 @@
       <li>History of Unicorns</li>
     </ul>
   </div>
-  <div class="item card">
-    <img
-      src="https://chuffedcoaching.com/launchpad/me-pineapple.png"
-      alt="Me wearing a pineapple shirt and smiling"
-    />
-    <h2>Dom Maurice</h2>
+  <div class="item panel profile-panel">
+    <div class="panel-header">
+      <span class="panel-label">Profile</span>
+    </div>
+    <div class="panel-content">
+      <img
+        src="https://chuffedcoaching.com/launchpad/me-pineapple.png"
+        alt="Me wearing a pineapple shirt and smiling"
+      />
+      <h2>Dom Maurice</h2>
+    </div>
   </div>
 </div>
 
@@ -21,46 +26,59 @@
   .about-me-slide {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
-    gap: 2vw;
+    gap: var(--component-gap);
   }
 
   .about-me-slide .item {
-    width: 40vw;
+    flex: 1;
   }
 
-  .about-me-slide .card {
-    background-color: var(--card-blue);
-    border-radius: 2vh;
+  .about-me-slide .profile-panel {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .about-me-slide .card h2 {
-    font-size: 6vh;
-    color: var(--text-white); /* gold accent for big text */
-    margin-bottom: 2vh;
-    background-color: var(--accent-coral);
+  .about-me-slide .profile-panel h2 {
+    font-size: 4vh;
+    color: var(--highlight-frost);
+    margin: var(--padding-standard) 0 0 0;
+    text-align: center;
+  }
+
+  .about-me-slide ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 2vh 0;
-    border-radius: 0 0 2vh 2vh;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 
   .about-me-slide ul li {
     text-align: left;
-    font-size: 4vh;
-    margin-bottom: 4vh;
+    font-size: 3.5vh;
+    margin-bottom: var(--padding-standard);
+    color: var(--text-sage);
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .about-me-slide ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-magenta);
+    font-family: "JetBrains Mono", monospace;
   }
 
   .about-me-slide img {
     width: 100%;
     height: auto;
-    max-height: 70vh;
-    object-fit: contain;
-    border-radius: 2vh;
-    margin-top: 2vh;
+    max-height: 50vh;
+    object-fit: cover;
+    border: 1px solid var(--border-moss);
   }
 </style>

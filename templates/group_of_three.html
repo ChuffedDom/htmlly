@@ -1,52 +1,49 @@
 <div class="slide group-of-three-slide">
-  <div class="card">{{ args[0]|safe }} {{ args[1]|safe }}</div>
-  <div class="card">{{ args[2]|safe }} {{ args[3]|safe }}</div>
-  <div class="card">{{ args[4]|safe }} {{ args[5]|safe }}</div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">A</span></div>
+    <div class="panel-content">{{ args[0]|safe }} {{ args[1]|safe }}</div>
+  </div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">B</span></div>
+    <div class="panel-content">{{ args[2]|safe }} {{ args[3]|safe }}</div>
+  </div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">C</span></div>
+    <div class="panel-content">{{ args[4]|safe }} {{ args[5]|safe }}</div>
+  </div>
 </div>
 
 <style>
-  /* wrapper uses flex so the two cards sit side-by-side */
   .group-of-three-slide {
     display: flex;
-    justify-content: space-between; /* one card left, one right */
-    padding: 5vh 0;
+    justify-content: space-between;
+    align-items: stretch;
     flex-direction: row;
-    padding: 2em;
-    gap: 2vw; /* add some gap between the cards */
+    gap: var(--component-gap);
   }
 
   .group-of-three-slide .card {
-    background-color: var(
-      --card-blue,
-      #007bff
-    ); /* use CSS variable --card-blue */
-    padding: 3vh 2vw;
-    border-radius: 4vh;
-    width: 48%;
-    box-sizing: border-box;
-    height: 50vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
-  .group-of-three-slide .card h2 {
-    font-size: 5vh;
-    margin-bottom: 1vh;
-    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  .group-of-three-slide .panel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .group-of-three-slide .card h3 {
-    font-size: 4vh;
-    margin-bottom: 0.5vh;
-    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  .group-of-three-slide .panel-content h2,
+  .group-of-three-slide .panel-content h3 {
+    font-size: 3vh;
+    color: var(--highlight-frost);
+    margin-bottom: var(--padding-standard);
   }
 
-  .group-of-three-slide .card p {
-    font-size: 4vh;
-    color: var(--text-white, #ffffff); /* white text for card content */
-    margin: 0 2vw;
-    align-self: center; /* vertically center the connector */
-    margin: 3vh 0;
+  .group-of-three-slide .panel-content p {
+    font-size: 2.5vh;
+    color: var(--text-sage);
   }
 </style>

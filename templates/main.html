@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono:wght@500;700&display=swap");
+
       :root {
-        --bg-grey: #191919;
-        --card-grey: #303030;
-        --bg-blue: #0b0d1d;
-        --card-blue: #232534;
-        --accent-gold: #faea95;
-        --accent-pink: #ff00ff;
-        --accent-cyan: #0df1b1;
-        --accent-coral: #f6084c;
-        --text-white: #e6fef7;
+        --bg-charcoal: #0a0b0a;
+        --surface-timber: #181a18;
+        --border-moss: #2c2e2c;
+        --text-sage: #a1a4a1;
+        --text-mist: #e4e6e4;
+        --highlight-frost: #f8f9f8;
+        --accent-magenta: hsl(343, 93%, 52%);
+        
+        --grid-unit: 16px;
+        --padding-standard: calc(var(--grid-unit) * 1.5); /* 24px */
+        --section-gap: calc(var(--grid-unit) * 6); /* 96px */
+        --component-gap: calc(var(--grid-unit) * 2); /* 32px */
       }
 
       body,
@@ -23,20 +27,27 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow: hidden; /* Prevents scrollbars on the body */
+        overflow: hidden;
+        background-color: var(--bg-charcoal);
       }
+
       body {
         font-family: "Inter", sans-serif;
-        color: var(--text-white);
-        background-color: var(--bg-grey);
-        background-image: radial-gradient(var(--card-grey) 1px, transparent 0);
-        background-size: 20px 20px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: var(--text-sage);
       }
+
       #presentation {
         height: 100vh;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
+        background-image: 
+          linear-gradient(rgba(44, 46, 44, 0.15) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(44, 46, 44, 0.15) 1px, transparent 1px);
+        background-size: var(--grid-unit) var(--grid-unit);
       }
+
       .slide {
         height: 100vh;
         width: 100%;
@@ -45,17 +56,92 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2em;
-        text-align: center;
+        padding: var(--section-gap);
         box-sizing: border-box;
       }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
+
+      h1, h2, h3, h4, h5, h6 {
         font-family: "JetBrains Mono", monospace;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--text-mist);
+        margin-top: 0;
+      }
+
+      h1 { font-size: 4rem; }
+      h2 { font-size: 3rem; }
+      h3 { font-size: 2rem; }
+
+      /* Precision Marker */
+      h1::after, h2::after, h3::after {
+        content: ".";
+        color: var(--accent-magenta);
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+
+      /* Structured Panel Look */
+      .panel {
+        border: 1px solid var(--border-moss);
+        background-color: var(--bg-charcoal);
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .panel-header {
+        background-color: var(--surface-timber);
+        border-bottom: 1px solid var(--border-moss);
+        padding: calc(var(--grid-unit) * 0.5) var(--padding-standard);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .panel-header::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: var(--accent-magenta);
+        border-radius: 50%;
+      }
+
+      .panel-label {
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.8rem;
+        color: var(--text-mist);
+      }
+
+      .panel-content {
+        padding: var(--padding-standard);
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        background-color: var(--text-mist);
+        color: var(--bg-charcoal);
+        padding: calc(var(--grid-unit) * 0.5) var(--padding-standard);
+        border: none;
+        border-radius: 2px;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 0 var(--accent-magenta);
       }
     </style>
   </head>

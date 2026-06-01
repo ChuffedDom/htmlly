@@ -1,162 +1,149 @@
 <div class="slide sign-off-slide">
-  <div class="card">
-    <div class="item">
-      <div class="top-card">
-        <img
-          src="https://chuffedcoaching.com/dom-maurice/Me.png"
-          alt="Dom Maurice headshot"
-        />
-        <div class="user-socials">
-          <h3>Dom Maurice</h3>
-          <h6>@chuffeddom</h6>
-          <div class="socials-row">
-            <img
-              src="https://chuffedcoaching.com/dom-maurice/icons/github.svg"
-              alt="chuffeddom on GitHub"
-            />
-            <img
-              src="https://chuffedcoaching.com/dom-maurice/icons/youtube.svg"
-              alt="chuffeddom on YouTube"
-            />
-            <img
-              src="https://chuffedcoaching.com/dom-maurice/icons/bluesky.svg"
-              alt="chuffeddom on Bluesky"
-            />
-            <img
-              src="https://chuffedcoaching.com/dom-maurice/icons/tiktok.svg"
-              alt="chuffeddom on TikTok"
-            />
-            <img
-              src="https://chuffedcoaching.com/dom-maurice/icons/substack.svg"
-              alt="chuffeddom on Substack"
-            />
+  <div class="container">
+    <div class="panel profile-card">
+      <div class="panel-header">
+        <span class="panel-label">Contact Information</span>
+      </div>
+      <div class="panel-content">
+        <div class="top-row">
+          <img
+            src="https://chuffedcoaching.com/dom-maurice/Me.png"
+            alt="Dom Maurice headshot"
+            class="profile-img"
+          />
+          <div class="user-meta">
+            <h3>Dom Maurice</h3>
+            <span class="handle">@chuffeddom</span>
+            <div class="socials-row">
+              <img src="https://chuffedcoaching.com/dom-maurice/icons/github.svg" alt="GitHub" />
+              <img src="https://chuffedcoaching.com/dom-maurice/icons/youtube.svg" alt="YouTube" />
+              <img src="https://chuffedcoaching.com/dom-maurice/icons/bluesky.svg" alt="Bluesky" />
+              <img src="https://chuffedcoaching.com/dom-maurice/icons/tiktok.svg" alt="TikTok" />
+              <img src="https://chuffedcoaching.com/dom-maurice/icons/substack.svg" alt="Substack" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="links">
-        <a href="https://linkedin.com/in/dom-maurice/" class="link-row">
-          <img
-            src="https://chuffedcoaching.com/dom-maurice/icons/linkedin.svg"
-            alt="chuffeddom on LinkedIn"
-          />
-          <h6>linkedin.com/in/dom-maurice/</h6>
-        </a>
-        <a href="mailto:dom@chuffed.solutions" class="link-row">
-          <img
-            src="https://chuffedcoaching.com/dom-maurice/icons/email.svg"
-            alt="chuffeddom on Email"
-          />
-          <h6>dom@chuffed.solutions</h6>
-        </a>
-        <a href="https://chuffedcoaching.com" class="link-row">
-          <img
-            src="https://chuffedcoaching.com/dom-maurice/icons/website.svg"
-            alt="chuffeddom on Website"
-          />
-          <h6>chuffedcoaching.com</h6>
-        </a>
+        <div class="links-list">
+          <a href="https://linkedin.com/in/dom-maurice/" class="link-item">
+            <img src="https://chuffedcoaching.com/dom-maurice/icons/linkedin.svg" alt="LinkedIn" />
+            <span>linkedin.com/in/dom-maurice/</span>
+          </a>
+          <a href="mailto:dom@chuffed.solutions" class="link-item">
+            <img src="https://chuffedcoaching.com/dom-maurice/icons/email.svg" alt="Email" />
+            <span>dom@chuffed.solutions</span>
+          </a>
+          <a href="https://chuffedcoaching.com" class="link-item">
+            <img src="https://chuffedcoaching.com/dom-maurice/icons/website.svg" alt="Website" />
+            <span>chuffedcoaching.com</span>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="item">
-      <img
-        src="https://chuffedcoaching.com/dom-maurice/Chuffed-Coaching-Dom-QR.png"
-        alt="qrcode to page"
-      />
+    
+    <div class="panel qr-panel">
+      <div class="panel-header">
+        <span class="panel-label">Connect</span>
+      </div>
+      <div class="panel-content">
+        <img
+          src="https://chuffedcoaching.com/dom-maurice/Chuffed-Coaching-Dom-QR.png"
+          alt="QR Code"
+          class="qr-img"
+        />
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  .sign-off-slide p {
-    font-size: 8vh;
+  .sign-off-slide .container {
+    display: flex;
+    gap: var(--component-gap);
+    align-items: stretch;
   }
 
-  .sign-off-slide .card {
+  .sign-off-slide .profile-card {
+    flex: 2;
+  }
+
+  .sign-off-slide .qr-panel {
+    flex: 1;
     display: flex;
-    gap: 5vh;
+    flex-direction: column;
+  }
+
+  .sign-off-slide .panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-standard);
+  }
+
+  .sign-off-slide .top-row {
+    display: flex;
+    gap: var(--padding-standard);
     align-items: center;
   }
 
-  .socials-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  .sign-off-slide .profile-img {
+    height: 15vh;
+    width: 15vh;
+    border: 1px solid var(--border-moss);
   }
 
-  .top-card {
-    display: flex;
-    flex-direction: row;
-    gap: 5vh;
-  }
-
-  .top-card img {
-    height: 20vh;
-    width: 20vh;
-  }
-
-  .socials-row img {
-    height: 4.5vh;
-    width: 4.5vh;
-    /* recolour SVG icons by forcing them to white via filter */
-    filter: brightness(0) invert(1);
-  }
-
-  .top-card .user-socials {
+  .sign-off-slide .user-meta {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
     align-items: flex-start;
   }
 
-  .top-card .user-socials h6 {
-    font-size: 3.5vh;
+  .sign-off-slide .user-meta h3 {
+    font-size: 4vh;
+    color: var(--highlight-frost);
     margin: 0;
   }
 
-  .top-card .user-socials h3 {
-    font-size: 4vh;
-    margin: 0;
-    color: var(--accent-gold);
+  .sign-off-slide .handle {
+    font-family: "JetBrains Mono", monospace;
+    color: var(--accent-magenta);
+    font-size: 2vh;
     margin-bottom: 1vh;
   }
 
-  .links {
+  .sign-off-slide .socials-row {
     display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    margin-left: 3vw;
+    gap: 1rem;
   }
 
-  .links a.link-row {
+  .sign-off-slide .socials-row img {
+    height: 3vh;
+    width: 3vh;
+    filter: brightness(0) invert(0.8);
+  }
+
+  .sign-off-slide .links-list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: 1.5vh;
-    text-decoration: none;
-    color: var(--text-white);
   }
 
-  .links a img {
-    height: 6vh;
-    width: 6vh;
-    flex-shrink: 0;
-    filter: brightness(0) invert(1);
-  }
-
-  .links a h6 {
-    margin: 0;
-    font-size: 2.5vh;
-  }
-
-  .sign-off-slide .card > .item:first-child {
+  .sign-off-slide .link-item {
     display: flex;
-    flex-direction: column;
-    gap: 3vh;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-sage);
+    font-size: 2vh;
   }
 
-  .sign-off-slide .card > .item:last-child img {
-    height: min(40vh, 30vw);
-    width: min(40vh, 30vw);
-    border-radius: 4vh;
+  .sign-off-slide .link-item img {
+    height: 3vh;
+    width: 3vh;
+    filter: brightness(0) invert(0.8);
+  }
+
+  .sign-off-slide .qr-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-moss);
   }
 </style>

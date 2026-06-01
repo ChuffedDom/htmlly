@@ -4,25 +4,26 @@
 
 <style>
   .title-image-slide {
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .title-image-slide h2 {
-    color: var(--accent-gold);
-    font-size: 7vh;
-    margin-bottom: 5vh;
-    margin-block-start: 0;
+    color: var(--highlight-frost);
+    font-size: 8vh;
+    margin-bottom: var(--component-gap);
   }
   .title-image-slide p {
-    font-size: 6vh;
-    margin: 0;
-    margin-bottom: 1vh;
+    font-size: 5vh;
+    color: var(--text-sage);
+    margin-bottom: var(--padding-standard);
   }
   .title-image-slide img {
     height: auto;
-    max-height: 80%;
-    width: 60vw;
-    max-width: 60vw;
+    max-height: 60vh;
+    width: auto;
+    max-width: 80vw;
     object-fit: contain;
-    border-radius: clamp(8px, 2vw, 24px);
+    border: 1px solid var(--border-moss);
   }
 </style>
