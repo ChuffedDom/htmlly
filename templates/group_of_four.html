@@ -1,52 +1,53 @@
 <div class="slide group-of-four-slide">
-  <div class="card">{{ args[0]|safe }} {{ args[1]|safe }}</div>
-  <div class="card">{{ args[2]|safe }} {{ args[3]|safe }}</div>
-  <div class="card">{{ args[4]|safe }} {{ args[5]|safe }}</div>
-  <div class="card">{{ args[6]|safe }} {{ args[7]|safe }}</div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">A</span></div>
+    <div class="panel-content">{{ args[0]|safe }} {{ args[1]|safe }}</div>
+  </div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">B</span></div>
+    <div class="panel-content">{{ args[2]|safe }} {{ args[3]|safe }}</div>
+  </div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">C</span></div>
+    <div class="panel-content">{{ args[4]|safe }} {{ args[5]|safe }}</div>
+  </div>
+  <div class="panel card">
+    <div class="panel-header"><span class="panel-label">D</span></div>
+    <div class="panel-content">{{ args[6]|safe }} {{ args[7]|safe }}</div>
+  </div>
 </div>
 
 <style>
   .group-of-four-slide {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* two columns of equal width */
-    grid-template-rows: 1fr 1fr; /* two rows of equal height */
-    justify-content: space-between; /* one card left, one right */
-    padding: 2em;
-    gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--component-gap);
+    width: 100%;
+    height: 100%;
   }
 
   .group-of-four-slide .card {
-    background-color: var(
-      --card-blue,
-      #007bff
-    ); /* use CSS variable --card-blue */
-    padding: 3vh 2vw;
-    border-radius: 4vh;
-    width: 100%;
-    box-sizing: border-box;
-    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
-  .group-of-four-slide .card h2 {
-    font-size: 5vh;
-    margin-bottom: 1vh;
-    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
+  .group-of-four-slide .panel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .group-of-four-slide .card h3 {
-    font-size: 4vh;
-    margin-bottom: 0.5vh;
-    color: var(--accent-cyan, #00ffff); /* use CSS variable --accent-cyan */
-  }
-
-  .group-of-four-slide .card p {
+  .group-of-four-slide .panel-content h2,
+  .group-of-four-slide .panel-content h3 {
     font-size: 3vh;
-    color: var(--text-white, #ffffff); /* white text for card content */
-    margin: 0 2vw;
-    align-self: center; /* vertically center the connector */
-    margin: 3vh 0;
+    color: var(--highlight-frost);
+    margin-bottom: var(--padding-standard);
+  }
+
+  .group-of-four-slide .panel-content p {
+    font-size: 2.2vh;
+    color: var(--text-sage);
   }
 </style>

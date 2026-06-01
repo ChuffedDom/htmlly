@@ -9,12 +9,29 @@
     justify-content: flex-start;
   }
   .title-list-slide h2 {
-    color: var(--accent-gold);
-    font-size: 7vh;
+    color: var(--highlight-frost);
+    font-size: 8vh;
+    margin-bottom: var(--component-gap);
+  }
+
+  .title-list-slide ul {
+    list-style: none;
+    padding: 0;
   }
 
   .title-list-slide li {
     font-size: 4vh;
-    margin-left: 2em;  
+    color: var(--text-sage);
+    margin-bottom: var(--padding-standard);
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  .title-list-slide li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-magenta);
+    font-family: "JetBrains Mono", monospace;
   }
 </style>

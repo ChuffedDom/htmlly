@@ -5,5 +5,18 @@
 <style>
   .singular-paragraph-slide p {
     font-size: 6vh;
+    color: var(--text-mist);
+    max-width: 80%;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .singular-paragraph-slide p::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-magenta);
+    margin: 0 auto var(--component-gap) auto;
   }
 </style>

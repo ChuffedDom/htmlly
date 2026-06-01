@@ -5,12 +5,15 @@
 <style>
   .just-image-slide p {
     font-size: 8vh;
+    color: var(--text-mist);
+    font-family: "JetBrains Mono", monospace;
   }
   .just-image-slide img {
-    width: 90vw; /* Maintains aspect ratio */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 90vh; /* Ensures it doesn't exceed viewport height */
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 80vh;
     object-fit: contain;
-    border-radius: clamp(16px, 4vh, 28px);
+    border: 1px solid var(--border-moss);
   }
 </style>

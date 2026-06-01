@@ -1,8 +1,13 @@
 <div class="slide big-text-small-image-slide">
-  <div class="item">{{ args[0] }}</div>
-  <!-- big text -->
-  <div class="item">{{ args[1] }}</div>
-  <!-- image -->
+  <div class="item text-content">{{ args[0] }}</div>
+  <div class="item panel image-panel">
+    <div class="panel-header">
+      <span class="panel-label">Visual Reference</span>
+    </div>
+    <div class="panel-content">
+      {{ args[1] }}
+    </div>
+  </div>
 </div>
 
 <style>
@@ -11,32 +16,30 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 2vw;
+    gap: var(--component-gap);
   }
 
   .big-text-small-image-slide .item {
-    margin: 1vh 0;
-    width: 40vw;
+    flex: 1;
   }
 
   .big-text-small-image-slide h2 {
     font-size: 8vh;
-    color: var(--accent-gold, #ffd700); /* gold accent for big text */
-    margin-bottom: 2vh;
+    color: var(--highlight-frost);
+    margin-bottom: var(--padding-standard);
   }
 
   .big-text-small-image-slide h3 {
     font-size: 6vh;
-    color: var(--accent-cyan, #00ffff); /* cyan accent for smaller text */
-    margin-bottom: 1vh;
+    color: var(--text-mist);
+    margin-bottom: var(--padding-standard);
   }
 
   .big-text-small-image-slide img {
     width: 100%;
     height: auto;
-    max-height: 90vh;
+    max-height: 70vh;
     object-fit: contain;
-    border-radius: 2vh;
-    margin-top: 2vh;
+    border: 1px solid var(--border-moss);
   }
 </style>
